@@ -13,7 +13,7 @@ define(["https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.js", "jquer
         var mapContainer = oControlHost.container.id;
 
         //*** Step 2a make some minor adjustments to default map */
-        mapboxgl.accessToken = ''; //Make sure to add Map Token Key
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWFyZWs1MDUwIiwiYSI6ImNpemJoc25idTBud2szMnFvZTZtd3lvMmUifQ.E071rwvaf7wPulqnnxJhUQ'; //Make sure to add Map Token Key
         map = new mapboxgl.Map({
             container: mapContainer,
             style: 'mapbox://styles/mapbox/streets-v9',
