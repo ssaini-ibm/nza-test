@@ -1,4 +1,4 @@
-define(["https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.js", "jquery"], function(mapboxgl, jQuery) {
+define(["https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js", "jquery"], function(mapboxgl, jQuery) {
     "use strict";
     var map = '',
         bounds = '',
