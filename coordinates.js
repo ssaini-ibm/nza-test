@@ -8,13 +8,13 @@ define(["https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js", "jquer
 
     BasicControl.prototype.initialize = function(oControlHost, fnDoneInitializing, oDataStore) {
 
-        jQuery("head link[rel='stylesheet']").last().after("<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />");
+        jQuery("head link[rel='stylesheet']").last().after("<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />");
 
         var mapContainer = oControlHost.container.id;
 
         //*** Step 2a make some minor adjustments to default map */
         mapboxgl.accessToken = 'pk.eyJ1IjoibWFyZWs1MDUwIiwiYSI6ImNpemJoc25idTBud2szMnFvZTZtd3lvMmUifQ.E071rwvaf7wPulqnnxJhUQ'; //Make sure to add Map Token Key
-        map = new mapboxgl.Map({
+        const map = new mapboxgl.Map({
             container: mapContainer,
             style: 'mapbox://styles/mapbox/streets-v9',
             center: [-62.88, 44.7], //Update Map Center to mid US
